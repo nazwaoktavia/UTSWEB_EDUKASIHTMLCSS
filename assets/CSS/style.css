@@ -1,0 +1,440 @@
+/* untuk merubah font pada tampilan web */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    /* agar tidak ada space kosong */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    /* agar tidak ada garis bawah pada link */
+    text-decoration: none;
+}
+
+/* navbar */
+nav{
+    /* untuk mengubah warna background */
+    background-color: rgb(255, 255, 255);
+    /* agar navbar tetap berada diatas */
+    position: fixed;
+    width: 100%;
+    /* agar berada di layer paling atas */
+    z-index: 999;
+    /* agar tampilan row */
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    /* supaya teksnya bold */
+    font-weight: bold;
+    /* supaya item di center tengah */
+    align-items: center;
+    
+}
+.colornav{
+    color: rgb(195, 0, 255);
+    /* agar navbar tidak ada garis bawah */
+    text-decoration: none;
+}
+nav .navbar {
+    /* agar tampilan satu baris */
+    display: flex;
+    /* memberikan jarak antar element */
+    gap: 1rem;
+    
+}
+
+a:hover{
+    /* supaya saat kursor mendekati lelement akan berubah warna */
+    color: rgb(53, 50, 208);
+}
+.img-icon{
+    /* mengatur tinggi gambar */
+    height: 40px;
+    /* mengatur lebar gambar */
+    width: 70px;
+}
+/* navbar end */
+
+/* home*/
+section{
+    /* memberikan jarak dalam */
+    padding: 80px 17%;
+}
+.home{
+    /* mengatur lebar penuh selayar */
+    width: 100%;
+    background-color: rgb(47, 34, 189);
+    /* mengatur tinggi penuh selayar */
+    /* Mengatur tinggi pada elemen secara minimum */
+    min-height: 100vh;
+    /*membagi kolom pada website menjadi beberapa bagian sesuai yang diinginkan */
+    display: grid;
+    /* jarak antar element */
+    grid-gap:1.5rem;
+    /* digunakan untuk mengatur tata letak kolom dalam sebuah grid CSS.
+       repeat untuk mengulang pola lebar kolom
+    */
+    grid-template-columns: repeat(2, 1fr);
+    /* Mengatur item agar berada di tengah secara vertikal */
+    align-items: center;
+    
+}
+
+
+.img-home{
+    /* Mengatur lebar pada elemen secara maksimum */
+    max-width: 100%;
+    width: 100px;
+    height: auto;
+}
+
+.teks-home h1{
+    /* ukuran font */
+    font-size: 2rem;
+    /* warna teks */
+    color: white;
+}
+
+.teks-home h2{
+    font-size: 1.25rem;
+    color: rgb(0, 195, 255);
+    /* memberikan jarah jarak semua sisi bagian luar */
+    margin: 1rem 0 2rem;
+}
+
+.btn{
+    background-color: white;
+    padding: 1rem 1rem;
+    /* memberikan garis lengkung pada element/tag  */
+    border-radius: 40px;
+    /* Jika layar tidak muat maka otomatis membuat baris baru  */
+    display: inline-block;
+    border-radius: 0.5rem;
+    /* untuk mengubah tampilan kursor saat pengguna mengarahkan kursor mouse ke elemen HTML tertentu */
+    cursor: pointer;
+    /* supaya teks tebal */
+    font-weight: bold;
+    /* mengatur posisi element horizontal */
+    justify-content: space-between;
+}
+
+.btn:hover{
+    background-color:rgb(0, 195, 255);
+    color: white;
+    /* ketika kursor mendekati element, maka element akan membesar */
+    transform: scale(1.2);
+}
+
+/* ketika cursor di click di element */
+.btn:active{
+    background-color: rgb(65, 121, 198);
+}
+
+/* home end */
+
+/*  about */
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+
+.img-about{
+    /* Mengatur lebar pada elemen secara maksimum */
+    max-width: 100%;
+    width: 480px;
+    height: auto;
+}
+
+.teks-about h1{
+    color: rgb(47, 34, 189);
+    font-size: 30px;
+}
+
+.teks-about h2{
+    color: rgb(87, 76, 200);
+    font-size: 18px;
+}
+
+.teks-about p{
+    color: black;
+    font-size: 15px;
+    /* Mengatur posisi dari text  */
+    text-align: justify;
+}
+/*  about end */
+
+/*  mapel */
+.heading-mapel{
+    /* mengatur posisi dari text */
+    text-align: center;
+}
+.heading-mapel span{
+    color:  rgb(5, 5, 5);
+     /* mengatur ketebalan font */
+    font-weight: 600;
+}
+.heading-mapel h2{
+    font-size: 1.25rem;
+    color:  rgb(47, 34, 189);
+}
+
+.mapel-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 1.5rem;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.img-mapel{
+    width: 10rem;
+    height: 10rem;
+}
+
+.box-img{
+    height: 100%;
+    width: 100%;
+}
+.box{
+    /* Elemen diposisikan terhadap posisi normal*/
+    position: relative;
+    /* Mengatur jarak antar elemen bagian atas */
+    margin-top: 4rem;
+    height: auto;
+    width: 20rem;
+    display: flex;
+    /* digunakan untuk mengatur arah tata letak (layout) elemen-elemen dalam suatu container */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 213, 255);
+    padding: 20px;
+    border-radius: 0.5rem;
+    /* mengatur efek transisi (transition) pada perubahan properti CSS dalam elemen */
+    transition: 0.3s all ease-in-out;
+}
+/* membuat style untuk list link */
+
+/* memberikan style pada element */
+.box a{
+    text-decoration: none;
+    /* Mengatur posisi dari text  */
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* ketika cursor diarahkan ke element */
+.box:hover{
+    transform: translateY(-5px);
+    background-color: rgb(141, 134, 222);
+    color: white;
+
+}
+
+/* ketika cursor di click di element */
+.item:active{
+    background-color: rgb(190, 81, 190);
+}
+/* mapel end */
+
+
+/* footer start */
+.contact{
+    padding: 20px 17%;
+    width: 100%;
+    background-color: rgb(47, 34, 189);
+    font-size: 15px;
+}
+.main{
+    display: flex;
+    /* digunakan dalam konteks tata letak fleksibel (flex layout) untuk mengontrol bagaimana elemen-elemen dalam container flex akan dibungkus (wrap) jika 
+       mereka tidak muat dalam satu baris atau kolom tunggal. 
+     */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.col{
+    width: 25%;
+}
+
+.col h4{
+    font-size: 15px;
+    color: white;
+    /* Mengatur jarak antar elemen bagian bawah */
+    margin-bottom: 25px;
+    /* memungkinkan posisi elemen berhubungan dengan wadah div nya */
+    position: relative;
+}
+
+.col h4::before{
+    content: "";
+    /* menaruh element dimanapun. Unsur diposisikan relatif terhadap posisi pertama*/
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    left: 0;
+    bottom: -8px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Pemilih ini tidak memilih elemen setelah elemen turunan terakhir */
+.col ul li:not(last-child){
+    margin-bottom: 15px;
+}
+
+.col ul li a{
+    color: white;
+    font-size: 1rem;
+    /* Berfungsi untuk memberi blok baru atau baris baru seperti kode */
+    display: block;
+    text-transform: capitalize;
+    transition: .4s;
+}
+
+.col ul li a:hover{
+    color: rgb(255, 255, 255);
+    transform: translateX(-12px);
+}
+
+.col .social{
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col .social-1{
+    font-size: 13px;
+    color: white;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col .social a{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(47, 34, 189);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.col .social a:hover{
+    transform: scale(1.2);
+    color: rgb(255, 255, 255);
+    background-color: blueviolet;
+}
+p{
+    /* Mengatur posisi dari text  */
+    text-align: center;
+    color: white;
+}
+/* footer end */
+
+
+/* bindo */
+.text-home-indo{
+    color: white;
+    text-align: center;
+}
+
+.home-mapel{
+    width: 100%;
+    background-color: rgb(47, 34, 189);
+    /* Mengatur tinggi pada elemen secara minimum */
+    min-height: 30rem;
+    display: grid;
+    align-items: center;
+    
+}
+/* bindo finish */
+
+/* biografi */
+
+.biografi-teks {
+    color: white;
+    text-align: center;
+}
+
+.biografi-teks a{
+    color: rgb(128, 170, 232);
+}
+
+.biografi-teks a:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(2.2);
+}
+
+.isi-mapel img{
+    height: auto;
+    width: 60rem;
+    border-radius: 2rem;
+}
+
+.isi-mapel .pengertian-biografi p{
+    text-align: justify;
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    border-radius: 2rem;
+    padding: 20px;
+}
+
+.isi-mapel h2{
+    color: rgb(47, 34, 189);
+    text-align: center;
+}
+
+.isi-mapel .struktur-biografi h2{
+    color: white;
+}
+
+.isi-mapel .struktur-biografi{
+    background-color: rgb(47, 34, 189);
+    padding: 40px 17%;
+}
+.struktur-biografi{
+    border-radius: 2rem;
+    align-items: center;
+}
+.box-struktur{
+    background-color: white;
+    border-radius: 3rem;
+    height: auto;
+    width: auto;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.struktur-biografi h3{
+    color: rgb(47, 34, 189);
+    text-align: center;
+}
+
+.struktur-biografi p{
+    color: black;
+    text-align: justify;
+}
+
+.isi-mapel .referensi h3{
+    color: rgb(47, 34, 189);
+    text-align: center;
+}
+/* biografi end */

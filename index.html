@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vilearn</title>
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
+    <!-- Template Stylesheet -->
+    <link href="assets/CSS/style.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- navbar -->
+    <!-- div ntuk mengelompokkan dan mengatur elemen-elemen HTML lainnya menjadi suatu blok atau wadah. -->
+    <div class="navbar">
+        <nav>
+            <!-- tag img berfungsi untuk memasukkan image pada html, alt berfungsi menampilkan text pada gambar -->
+            <img class="img-icon" src="assets/img/favicon.png" alt="">
+
+            <div class="navbar">
+                <!-- a digunakan untuk membuat tautan (link) atau hiperlink ke halaman  lain, atau ke halaman dengan id lain  -->
+                <a href="#home" >Home</a>
+                <a href="#about" >About</a>
+                <a href="#mapel" >Mata Pelajaran</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar end -->
+
+    <!-- home-->
+    <!-- section untuk mengelompokkan dan mengidentifikasi bagian-bagian berbeda dari konten dalam halaman web. -->
+    <section class="home" id="home">
+            <div class="teks-home">
+                <h1> Vilearn ada untuk membantu belajar anda.</h1>
+                <h2>Cari materi yang kalian butuhkan sekarang!</h2>
+                <a href="#mapel" class="btn">Mulai Belajar</a>
+            </div>
+    
+            <div class="img-home">
+                <img  src="assets/img/study.gif" alt="">
+            </div>
+    </section>
+    
+    <!-- home end -->
+
+    <!--  about -->
+   <section class="about" id="about">
+        <div class="img-about">
+            <img  src="assets/img/about-img.png" alt="">
+        </div>
+        <div class="teks-about">
+            <h1>About</h1>
+            <h2>The best web learning solution with 3 years of experience.</h2>
+            <!-- baris baru -->
+            <br>
+            <p >ViLearn, portal pendidikan yang bertujuan untuk menginspirasi dan memfasilitasi
+                perjalanan pendidikan Anda. Kami berkomitmen untuk menghadirkan pembelajaran
+                yang mendalam dan informatif, untuk setiap orang di berbagai tingkat pendidikan.
+            </p>
+        </div>
+   </section>
+    <!--  about end -->
+
+
+    <!--  mata pelajaran -->
+   <section class="mapel" id="mapel">
+        <div class="heading-mapel">
+            <h2>Mata Pelajaran</h2>
+            <span>Selamat Belajar!</span>
+        </div>
+
+        <div class="mapel-container">
+            <div class="box">
+                <a href="bindo.html">
+                    <div class="box-img" width="10px" height="10px">
+                        <img class="img-mapel" src="assets/img/indo.png" alt="">
+                    </div>
+                    <h1>BAHASA INDONESIA</h1>
+                </a>
+            </div>
+
+            <div class="box">
+                <a href="math.html">
+                    <div class="box-img">
+                        <img class="img-mapel" src="assets/img/math.png" alt="">
+                    </div>
+                    <h1>MATEMATIKA</h1>
+                </a>
+            </div>
+        
+
+            <div class="box">
+                <a href="">
+                    <div class="box-img">
+                        <img class="img-mapel" src="assets/img/sejarah.png" alt="">
+                    </div>
+                    <h1>SEJARAH</h1>
+                </a>
+            </div>
+        </div>
+        <div class="mapel-container">
+            <div class="box">
+                <a href="">
+                    <div class="box-img">
+                        <img class="img-mapel" src="assets/img/english.png" alt="">
+                    </div>
+                    <h1>BAHASA INGGRIS</h1>
+                </a>
+            </div>
+        
+            <div class="box">
+                <a href="">
+                    <div class="box-img">
+                        <img class="img-mapel" src="assets/img/html.png" alt="">
+                    </div>
+                    <h1>HTML</h1>
+                </a>
+            </div>
+
+            <div class="box">
+                <a href="">
+                    <div class="box-img">
+                        <img class="img-mapel" src="assets/img/CSS.png" alt="">
+                    </div>
+                    <h1>CSS</h1>
+                </a>
+            </div>
+        </div>
+   </section>
+    <!--  mata pelajaran end -->
+
+    <!-- footer start -->
+    <footer>
+        <section class="contact" id="contact">
+            <div class="footer">
+                <div class="main">
+                    <div class="col">
+                        <h4>Menu links</h4>
+                        <!--Elemen <ul> digunakan untuk mengelompokkan daftar item yang tidak memiliki urutan tertentu. Elemen 
+                            <li> digunakan untuk menambahkan setiap item ke dalam daftar.  
+                        -->
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#mapel">Mata Pelajaran</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="col">
+                        <h4>Mata Pelajaran</h4>
+                        <ul>
+                            <li><a href="bindo.html">Bahasa Indonesia</a></li>
+                            <li><a href="math.html">Matematika</a></li>
+                            <li><a href="#">Sejarah</a></li>
+                            <li><a href="#">Bahasa Inggris</a></li>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="col">
+                        <h4>Contact Us</h4>
+                        <div class="social">
+                            <a href="https://wa.me/082135201788"><i class='bx bxl-whatsapp'></i></i></a>
+                            <a href="https://www.instagram.com/nazwaoktavia28/"><i class='bx bxl-instagram'></i></a>
+                            <a href="mailto: nazwaoktaviasalsabila28@gmail.com"><i class='bx bx-envelope' ></i></a>
+                            <a href="https://www.youtube.com/@nanazpiaa"><i class='bx bxl-youtube' ></i></a>
+                        </div>
+
+                        <div class="social-1">
+                            <br>
+                            Telp: 082135201788 <br>
+                            Instagram: @nazwaoktavia28 <br>
+                            Email: nazwaoktaviasalsabila28@gmail.com <br>
+                            Youtube: nanazpiaa
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <br>
+                <p>© 2023 |nazwaoktavia28</p>
+            </div>
+
+        </section>
+    </footer>
+    <!-- footer end -->
+</body>
+</html>
